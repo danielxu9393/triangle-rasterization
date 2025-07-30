@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Visualize Rendering",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "visualization.triangle_rasterization",
+            "args": [
+                "--scene-name=sphere_specular"
+            ],
+            "justMyCode": true,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0",
+            }
+        },
+        {
+            "name": "Occupancy to Mesh",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "visualization.occupancy_to_mesh",
+            "args": [],
+            "justMyCode": true,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0",
+            }
+        },
+        {
+            "name": "Debug Parameter Upscaling",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "triangle_extraction.slang.upscale_parameters",
+            "args": [],
+            "justMyCode": true,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0",
+            }
+        },
+    ]
+}

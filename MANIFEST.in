@@ -1,0 +1,5 @@
+global-exclude *~ *.py[cod] *.so *.lock
+include triangle_rasterization/slang/*.slang
+include triangle_rasterization/slang/*.cu
+include triangle_extraction/slang/*.slang
+include triangle_extraction/slang/*.cu
